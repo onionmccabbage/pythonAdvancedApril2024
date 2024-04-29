@@ -1,3 +1,4 @@
+#when we import, Python will run the imported code exactly as if it was written here
 from my_abstract_class import AbstractShape
 
 class Shape(AbstractShape):
@@ -29,6 +30,8 @@ class Shape(AbstractShape):
         '''we override the built-in __str__ to specify how this class should print'''
         return f'This is the Shape class called {self.s_name} with {self.sides} sides\n' # \n we may choose to include new line
     
+# it is really good practice to use the following...
+# (avoid running code when imported elsewhere)
 if __name__ == '__main__':
     try:
         s = Shape('Oblong', 4) # we have an instance of our class (calls __init__)

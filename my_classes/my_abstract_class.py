@@ -11,3 +11,5 @@ class AbstractShape(metaclass=ABCMeta):
     def __str__(self):
         '''we will definitiely need to implement a __str__ in our concrete classes'''
 
+if __name__ == '__main__':
+    print('oooh thats clever')

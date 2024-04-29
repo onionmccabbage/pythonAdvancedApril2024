@@ -30,9 +30,9 @@ Monday
 > inheritance
 > name mangled members
 > override the __eq__ method to define what you mean by equality
-- if __name__== '__main__'
+> if __name__== '__main__'
 q - why are we getting a space in printout after /n ???
-- using decorators
+> using decorators
 - after lunch review
 - functional programming: map, filter and reduce  
 - functional programming: parameters
