@@ -17,7 +17,7 @@ class Shape(AbstractShape):
             raise TypeError # or we can just set a sensible default
     def __str__(self):
         '''we override the built-in __str__ to specify how this class should print'''
-        return f'This is the Shape class called {self.s_name}\n' # we may choose to include new line
+        return f'This is the Shape class called {self.s_name}\n' # \n we may choose to include new line
     
 if __name__ == '__main__':
     s = Shape('Oblong') # we have an instance of our class (calls __init__)
@@ -26,7 +26,9 @@ if __name__ == '__main__':
     # s.__s_name = 'wibblywoo' # this fails due to slots
     s2 = Shape('Circle') 
     s3 = Shape('Triangle')
-    print(s, s2, s3)
+    print(s, s2, s3, sep='')
+    print(s2)
+    print(s3, end=', ')
     # we can still acces the mangled property name
     print( s._Shape__s_name )
 

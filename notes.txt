@@ -20,17 +20,18 @@ Python code lives in classes (or in functions), in modules, which live in packag
 4:30 end
 
 Monday
-- intro and welcome
+> intro and welcome
   - what do you currently know
   - what do you want to know
-- classes 
-- abstract and concrete classes
-- using slots
+> classes 
+> abstract and concrete classes
+> using slots
 - validate data types: isinstance, type, int(float())
-- inheritance
-- name mangled members
+> inheritance
+> name mangled members
   override the __eq__ method to define what you mean by equality
 - if __name__== '__main__'
+q - why are we getting a space in printout after /n ???
 - using decorators
 - after lunch review
 - functional programming: map, filter and reduce  
