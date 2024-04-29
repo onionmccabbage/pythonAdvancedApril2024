@@ -1,0 +1,96 @@
+Python Advanced
+===============
+
+Toby Dussek
+April 29-May 2 2024
+
+Repo https://github.com/onionmccabbage/pythonAdvancedApril2024
+
+You will need:
+- Python 3.x
+- an editor (e.g. VS Code, PyCharm etc.)
+- internet, with permission to install python libraries (e.g. requests library)
+
+Python code lives in classes (or in functions), in modules, which live in packages (folders)
+
+9:00
+10:30 break (15 mins)
+12:00 lunch (1 hr)
+2:30 break (15 minutes)
+4:00 end
+
+Monday
+- intro and welcome
+  - what do you currently know
+  - what do you want to know
+- classes 
+- abstract and concrete classes
+- using slots
+- validate data types: isinstance, type, int(float())
+- inheritance
+- name mangled members
+  override the __eq__ method to define what you mean by equality
+- if __name__== '__main__'
+- using decorators
+- after lunch review
+- functional programming: map, filter and reduce  
+- functional programming: parameters
+
+Tuesday
+- Loading local and remote data (requests)
+- how to convert bytes back to string
+- processing text/json
+  - json.loads() takes JSON and returns Python structure
+  - json.dumps() takes Python structure and returns JSON
+- persisting files: read/write/append/exclusive/overwrite, text, bytes, json
+- 'with' operator for clean handling of assets
+- redirect stdout
+- databases
+  see https://wiki.python.org/moin/DatabaseProgramming
+  also useful: add 'sqlite viewer' plugin to VSCode
+- other db connections
+- Create, Read and Update (and Delete) - CRUD operations
+- populate db with sample data
+- read and nicely format values from the db
+- after lunch review exercise 
+  we will be using the 'requests' library
+
+Wednesday
+- comprehensions, generators and yield
+- decorator syntax
+- context manager to switch context e.g. for handling data input and output
+- networking server/client (microservices)
+- overview of Flask
+- immediate mode Python
+  - any results are immediately show using __repr__ 
+- Testing: (only really works if there is a good spec')
+  - doctest revisited
+  see https://docs.python.org/3/library/doctest.html
+  - unittest
+- after lunch lab exercise
+- pytest see https://docs.pytest.org/
+
+Thursday
+- profiling: timings etc. (cprofile)
+- multithreading, also limits of mutlithreading concurrency
+  - how threads are done
+  - concurrency and resources (lock shared resources)
+  - async await
+  - thread safety
+  in Python we do not get true parallelism ...
+- which Python...
+- the global Interpreter Lock (GIL) will affect threading performance
+  the classic cpython will be stymied by the GIL
+  jython (Java) an ironpython (.NET) are NOT limited in this way
+- using thread locks
+- Python has -O to optimize code (especially useful for threading and large code-base)
+  -O will attempt to optimize the code especially good for threading
+- logging, context mgr, often we log by time-stamp
+- after lunch review
+- zip, deque, iter etc
+- end of course feedbacks (internal and Neueda)
+
+Other Useful Resources
+- https://pynative.com/python-exercises-with-solutions/
+- https://realpython.com/
+- moving from Py2 to Py3 https://docs.python.org/3/howto/pyporting.html
