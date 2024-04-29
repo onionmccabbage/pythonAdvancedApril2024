@@ -26,7 +26,7 @@ Monday
 > classes 
 > abstract and concrete classes
 > using slots
-- validate data types: isinstance, type, int(float())
+> validate data types: isinstance, type, int(float())
 > inheritance
 > name mangled members
 > override the __eq__ method to define what you mean by equality
