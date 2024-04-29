@@ -34,7 +34,7 @@ Monday
 > why are we getting a space in printout after /n  - whitespace is being rendered as a space
 > using decorators
 > after lunch review
-- functional programming: map, filter and reduce  
+> functional programming: map, filter and reduce  
 > functional programming: parameters
 
 Tuesday
