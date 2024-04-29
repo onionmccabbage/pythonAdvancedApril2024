@@ -1,5 +1,6 @@
+from my_abstract_class import AbstractShape
 
-class Shape:
+class Shape(AbstractShape):
     __slots__ = ('__s_name',) # a tuple of permitted properties
     def __init__(self, s_name):
         '''call the internal validation setter method'''
