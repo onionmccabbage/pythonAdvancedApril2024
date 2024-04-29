@@ -31,11 +31,11 @@ Monday
 > name mangled members
 > override the __eq__ method to define what you mean by equality
 > if __name__== '__main__'
-q - why are we getting a space in printout after /n ???
+> why are we getting a space in printout after /n  - whitespace is being rendered as a space
 > using decorators
-- after lunch review
+> after lunch review
 - functional programming: map, filter and reduce  
-- functional programming: parameters
+> functional programming: parameters
 
 Tuesday
 - Loading local and remote data (requests)
