@@ -13,11 +13,11 @@ You will need:
 
 Python code lives in classes (or in functions), in modules, which live in packages (folders)
 
-9:00
-10:30 break (15 mins)
-12:00 lunch (1 hr)
-2:30 break (15 minutes)
-4:00 end
+9:30
+11:00 break (15 mins)
+12:30 lunch (1 hr)
+3:00 break (15 minutes)
+4:30 end
 
 Monday
 - intro and welcome
