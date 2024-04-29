@@ -36,6 +36,7 @@ Monday
 > after lunch review
 > functional programming: map, filter and reduce  
 > functional programming: parameters
+- typings
 
 Tuesday
 - Loading local and remote data (requests)
