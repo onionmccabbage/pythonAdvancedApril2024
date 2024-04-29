@@ -1,0 +1,35 @@
+Advanced Python Review Exercise 1
+=================================
+In a new module write a class called 'NumberFun' with one property
+This property will be validated as a positive integer
+
+Write decorated methods to get and set the @property
+Invalid entries should default to 1 (or throw an exception...)
+Use 'name-mangling' for the actual property (__num with get/set methods and a slot)
+
+Declare a __str__ method which returns the number, the square of the number 
+and the square root   ( sqrt = n**0.5 # returns square root of n )
+
+Exercise the code to show it works as expected ( if __name__ ...)
+Try to access the name-mangled property directly from outside an instance of the class.
+e.g.    t = myInst.__num # (should fail)
+
+At the end, some of you may like to show what you built
+
+Optional
+--------
+Write a method in your class which finds out if the integer is odd or even
+Write another method which finds out if the number is itself a square number
+Use these functions in your __str__ method
+
+Extend your class into a new class that also takes a boolean values
+If the boolean is set to True, your __str__ method should also show todays date
+
+Alter your original class such that the property defaults to zero for any class that inherits from this class
+(you could do this by checking the __base__ intrinsic value or checking the __dict__)
+
+Write an abstract base class with the properties and methods of you class
+Make you class inherit from this abstract base
+
+Is it now possible to make a class that inherits from this abstract base 
+and that does NOT implement the properties and methods of the abstract base?
