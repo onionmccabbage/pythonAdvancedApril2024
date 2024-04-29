@@ -35,6 +35,9 @@ class Shape(AbstractShape):
 if __name__ == '__main__':
     try:
         s = Shape('Oblong', 4) # we have an instance of our class (calls __init__)
+        # there are some intrinsic properties available
+        print(Shape.__bases__)
+        print(Shape.__dict__)
         s.s_name = 'Square'  #this will call the internal validated setter method
         # can we access the name-mangled property?
         # s.__s_name = 'wibblywoo' # this fails due to slots
