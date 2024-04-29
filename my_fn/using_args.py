@@ -13,7 +13,8 @@ def useBoth(*args, **kwargs): # keyword arguments must always follow any positio
     print(args) # all the positional arguments now exist in a tuple called 'args'
     print(kwargs) # all the keyword arguments always exist in a dictionary
     # we may choose to act conditionally based on how many args or the names of kwargs
-    for k,v in kwargs:
+    # NB remember - there is no predictable order to the members of a dict
+    for (k,v) in kwargs.items(): # this is how to iterate the members of a dictionary
         print(f'keyword argument {k} received a value {v}')
 
 if __name__ == '__main__':
