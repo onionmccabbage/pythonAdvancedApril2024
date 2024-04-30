@@ -28,9 +28,9 @@ def populateCreatures(creatures):
             # if all good we get here
             curs.execute(st, (n, count, cost))
             conn.commit()
-            conn.close()
         except Exception as err:
             print(err)
+    conn.close() # only close when all done
 
 
 
