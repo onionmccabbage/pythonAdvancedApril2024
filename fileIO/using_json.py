@@ -1,5 +1,5 @@
 # json is currently the most popular data-transfer format
-import json  # this is aprt of python
+import json  # this is part of python
 
 def makeJson(s):
     '''convert the data structure 's' into a json text'''
@@ -10,7 +10,7 @@ def retrieve(j):
     '''convert json into a Python data structure'''
     try:
         s = json.loads(j) # convert the (valid) json text into a python structure
-        return s
+        return s # or tuple(s)
     except Exception as err:
         print(err)
 # Valid JSON:
