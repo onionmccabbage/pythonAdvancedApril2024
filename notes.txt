@@ -44,14 +44,14 @@ Monday
 
 Tuesday
 > Loading local and remote data (requests)
-- typings
+> typings
   https://www.reddit.com/r/Python/comments/lpovof/type_validation_decorator/?rdt=64125
 > we will be using the 'requests' library for API calls
 - processing text/json
   - json.loads() takes JSON and returns Python structure
   - json.dumps() takes Python structure and returns JSON
 > persisting files: read/write/append/exclusive/overwrite, text, bytes, json
-- 'with' operator for clean handling of assets
+> 'with' operator for clean handling of assets
 - how to convert bytes back to string
 > databases
   see https://eteamspace.internal.ericsson.com/pages/viewpage.action?pageId=1122667126
@@ -63,7 +63,7 @@ Tuesday
 > read and nicely format values from the db
 > after lunch review exercise
 - json.loads() and json.dumps()
-- redirect stdout
+> redirect stdout
 
 Wednesday
 - comprehensions, generators and yield
