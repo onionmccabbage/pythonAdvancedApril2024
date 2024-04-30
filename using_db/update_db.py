@@ -10,8 +10,10 @@ def customUpdate(w): # w will be an instance of a creeature (to be updated)
     st = f'''
     UPDATE zoo
     SET count={q}
-    WHERE creatue = "{a}"
+    WHERE creature = "{a}"
     '''
+    curs.execute(st)
+    conn.close()
 
 
 if __name__ == '__main__':
