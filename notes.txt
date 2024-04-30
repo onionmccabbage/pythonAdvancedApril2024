@@ -36,17 +36,19 @@ Monday
 > after lunch review
 > functional programming: map, filter and reduce  
 > functional programming: parameters
-- typings
 
 Tuesday
+- course recordings
+  username: neueda password: c0nygre 
 - Loading local and remote data (requests)
-- how to convert bytes back to string
+- typings
+- we will be using the 'requests' library for API calls
 - processing text/json
   - json.loads() takes JSON and returns Python structure
   - json.dumps() takes Python structure and returns JSON
 - persisting files: read/write/append/exclusive/overwrite, text, bytes, json
 - 'with' operator for clean handling of assets
-- redirect stdout
+- how to convert bytes back to string
 - databases
   see https://wiki.python.org/moin/DatabaseProgramming
   also useful: add 'sqlite viewer' plugin to VSCode
@@ -54,8 +56,8 @@ Tuesday
 - Create, Read and Update (and Delete) - CRUD operations
 - populate db with sample data
 - read and nicely format values from the db
-- after lunch review exercise 
-  we will be using the 'requests' library
+- after lunch review exercise
+- redirect stdout
 
 Wednesday
 - comprehensions, generators and yield
