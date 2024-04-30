@@ -10,7 +10,7 @@ def type_validator(func):
         return func(*args, **kwargs)
     return newFunc
  
-@type_validator
+@type_validator # always the immediately following function is passedf in to the decorator
 def add(a: int, b: int):
     return a + b
  

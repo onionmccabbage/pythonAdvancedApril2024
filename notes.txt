@@ -19,6 +19,10 @@ Python code lives in classes (or in functions), in modules, which live in packag
 3:00 break (15 minutes)
 4:30 end
 
+course website:
+  https://s3.eu-west-1.amazonaws.com/neueda.conygre.com/Sites/Ericsson_Advanced_Python/site/index.html
+
+
 Monday
 > intro and welcome
   - what do you currently know
@@ -42,6 +46,7 @@ Tuesday
   username: neueda password: c0nygre 
 - Loading local and remote data (requests)
 - typings
+  https://www.reddit.com/r/Python/comments/lpovof/type_validation_decorator/?rdt=64125
 - we will be using the 'requests' library for API calls
 - processing text/json
   - json.loads() takes JSON and returns Python structure

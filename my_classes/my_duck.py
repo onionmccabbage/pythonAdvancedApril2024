@@ -1,3 +1,8 @@
+class MyClass():
+    def __init__(self) -> None: # type hints
+        pass
+    def __str__(self) -> str: # the type hint is a nice documentation for others looking at this code
+        pass
 
 class Duck():
     '''we may declare properties and methods that belong to the class (rather than to instances)'''
