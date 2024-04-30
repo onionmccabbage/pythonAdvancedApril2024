@@ -1,5 +1,5 @@
 # redirection is when we override the default input or output stream
-# there is a stdin and an stdout
+# there is a stdin and an stdout (also stderr)
 import sys
 
 # remember: print uses __str__ but immediate mode python uses __repr__
