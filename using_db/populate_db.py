@@ -12,7 +12,9 @@ def populateCreatures(creatures):
     for item in creatures:
         '''gate-keeping design pattern would be a good choice here'''
         try:
-            # type(item['creature']==str) : n = item['creature']  ? raise Exception('Creature name must be a string')
+            # [on_true] if [expression] else [on_false] 
+            n = item['creature'] if type(item['creature']==str) else 'Penguin'
+            # or more voerbose:
             if type(item['creature']==str):
                 n = item['creature']
             else:

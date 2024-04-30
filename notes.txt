@@ -4,7 +4,6 @@ Python Advanced
 Toby Dussek
 April 29-May 2 2024
 
-Repo https://github.com/onionmccabbage/pythonAdvancedApril2024
 
 You will need:
 - Python 3.x
@@ -21,7 +20,9 @@ Python code lives in classes (or in functions), in modules, which live in packag
 
 course website:
   https://s3.eu-west-1.amazonaws.com/neueda.conygre.com/Sites/Ericsson_Advanced_Python/site/index.html
-
+course recordings
+  username: neueda password: c0nygre 
+Repo https://github.com/onionmccabbage/pythonAdvancedApril2024
 
 Monday
 > intro and welcome
@@ -42,16 +43,14 @@ Monday
 > functional programming: parameters
 
 Tuesday
-- course recordings
-  username: neueda password: c0nygre 
-- Loading local and remote data (requests)
+> Loading local and remote data (requests)
 - typings
   https://www.reddit.com/r/Python/comments/lpovof/type_validation_decorator/?rdt=64125
-- we will be using the 'requests' library for API calls
+> we will be using the 'requests' library for API calls
 - processing text/json
   - json.loads() takes JSON and returns Python structure
   - json.dumps() takes Python structure and returns JSON
-- persisting files: read/write/append/exclusive/overwrite, text, bytes, json
+> persisting files: read/write/append/exclusive/overwrite, text, bytes, json
 - 'with' operator for clean handling of assets
 - how to convert bytes back to string
 > databases
