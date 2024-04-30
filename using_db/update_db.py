@@ -12,11 +12,13 @@ def customUpdate(w): # w will be an instance of a creeature (to be updated)
     SET count={q}
     WHERE creature = "{a}"
     '''
+    # print(st)
     curs.execute(st)
+    conn.commit() # without this, the executed SQL does NOT alter the DB
     conn.close()
 
 
 if __name__ == '__main__':
     # declare an updated creature
-    p = {'creature':'Penguin', 'count':305, 'cost':432.99}
+    p = {'creature':'Penguin', 'count':9, 'cost':432.99}
     customUpdate(p)
