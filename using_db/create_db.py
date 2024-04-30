@@ -12,11 +12,11 @@ def accessDB():
     # tripple-quotes let us use white-space such as neew line characters
     st = ''' 
     CREATE TABLE zoo
-    {
+    (
         creature VARCHAR(32) PRIMARY KEY,
         count int,
         cost float
-    }
+    )
     '''
     try:
         conn.execute(st) # we use the cursor to send thet SQL statement to the database
