@@ -13,7 +13,7 @@ def server():
         (client, addr) = server.accept() # host addr and port
         buf = client.recv(1024) # we often choose how much to receive
         print(f'Server has received {buf} from {client}')
-        if buf == b'quit':
+        if buf.lower() == b'quit': # 'quit' or 'QUIT'
             server.close()
             break # always provide a means of ending the loop
         # we will echo back whatever wa received in UPPER CASE

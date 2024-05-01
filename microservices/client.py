@@ -1,4 +1,5 @@
 import socket
+import sys
 
 def client():
     '''this client will make requests to our microservice over http'''
@@ -7,7 +8,10 @@ def client():
     port_t = ('localhost', 9874) 
     sock.connect( port_t ) # we now connect to our server
     #send a message to our server
-    message = 'hello' # or b'hello'
+    if len(sys.argv) > 1: # ignore sys.argv[0]
+        message = ' '.join(sys.argv[1:]) # slicing
+    else:
+        message = 'hello from the client' # or b'hello'
     sock.send(message.encode()) # make sure we encode as bytes
     # if any response is returned, receive it here
     data = sock.recv(1024) # read up to 1024 bytes
