@@ -47,12 +47,12 @@ Tuesday
 > typings
   https://www.reddit.com/r/Python/comments/lpovof/type_validation_decorator/?rdt=64125
 > we will be using the 'requests' library for API calls
-- processing text/json
+> processing text/json
   - json.loads() takes JSON and returns Python structure
   - json.dumps() takes Python structure and returns JSON
 > persisting files: read/write/append/exclusive/overwrite, text, bytes, json
 > 'with' operator for clean handling of assets
-- how to convert bytes back to string
+- how to convert bytes back to string b'this is bytes'.decode()
 > databases
   see https://eteamspace.internal.ericsson.com/pages/viewpage.action?pageId=1122667126
   see https://wiki.python.org/moin/DatabaseProgramming
@@ -62,17 +62,17 @@ Tuesday
 > populate db with sample data
 > read and nicely format values from the db
 > after lunch review exercise
-- json.loads() and json.dumps()
+> json.loads() and json.dumps()
 > redirect stdout
 
 Wednesday
-- comprehensions, generators and yield
-- decorator syntax
-- context manager to switch context e.g. for handling data input and output
+> comprehensions, generators and yield
+> decorator syntax
+> context manager to switch context e.g. for handling data input and output
 - networking server/client (microservices)
 - overview of Flask
-- immediate mode Python
-  - any results are immediately show using __repr__ 
+> immediate mode Python
+  > any results are immediately show using __repr__ 
 - Testing: (only really works if there is a good spec')
   - doctest revisited
   see https://docs.python.org/3/library/doctest.html
