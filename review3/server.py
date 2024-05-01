@@ -4,7 +4,7 @@ from datetime import datetime
 import requests
 import json
 
-def getData(cat='allbums', id=''):
+def getData(cat='albums', id=''):
     if id=='':
         apiUrl = f'https://jsonplaceholder.typicode.com/{cat}'
     else:

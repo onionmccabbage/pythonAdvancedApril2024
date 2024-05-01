@@ -77,7 +77,7 @@ Wednesday
   - doctest revisited
   see https://docs.python.org/3/library/doctest.html
   - unittest
-- after lunch lab exercise
+> after lunch lab exercise
 - pytest see https://docs.pytest.org/
 
 Thursday
