@@ -13,8 +13,12 @@ def server():
         (client, addr) = server.accept() # host addr and port
         buf = client.recv(1024) # we often choose how much to receive
         print(f'Server has received {buf} from {client}')
-        break # always provide a means of ending the loop
-
+        if buf == b'quit':
+            server.close()
+            break # always provide a means of ending the loop
+        # we will echo back whatever wa received in UPPER CASE
+        client.send(buf.upper())
+        client.close() # a good idea to close resources as early as possible
 
 if __name__ == '__main__':
     server() # invoke our microservice
