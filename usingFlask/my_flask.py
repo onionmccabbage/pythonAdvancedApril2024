@@ -1,5 +1,5 @@
 # we may need to pip install flask (or similar)
-from flask import Flask
+from flask import Flask, render_template
 import requests # we need this for proxying
 
 # Flask is a proper web server, handling basic HTTP requests and serving HTML content
@@ -45,7 +45,7 @@ def j(cat='albums', id=1):
 
 @app.route('/web')
 def web():
-    app.render_template('lunch.html')
+    return render_template('lunch.html')
 
 
 
