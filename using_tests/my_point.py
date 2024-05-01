@@ -24,3 +24,13 @@ class Point: # implicitly inherit from object
             self.__y = y # set a mangled property for x (only visible within the class)
         else:
             raise TypeError
+    def moveBy(self, dx, dy):
+        '''change the x and y values by dx and dy'''
+        self.x += dx
+        self.y += dy
+    def display(self):
+        return (self.x, self.y) # a tuple of the x and y values
+    def hypot(self):
+        ''' return the hypotenuse'''
+        h = (self.x**2 + self.y**2)**0.5
+        return h
