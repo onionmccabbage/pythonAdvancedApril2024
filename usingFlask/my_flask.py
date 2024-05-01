@@ -43,6 +43,9 @@ def j(cat='albums', id=1):
     response_j = response.json() # or xml, text, html etc.
     return response_j
 
+@app.route('/web')
+def web():
+    app.render_template('lunch.html')
 
 
 
