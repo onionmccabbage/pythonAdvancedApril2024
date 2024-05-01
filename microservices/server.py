@@ -7,7 +7,9 @@ def server():
     # NB we could configure the address maybe using sys.argv
     port_t = ('localhost', 9874) # choose suitable values
     server.bind(port_t) # bind to our microservice address
-    server.listen() # we need our server to liten for clients
+    # how many concurrent clients will be handle...
+    # if we need to handle more than one client concurrently then we may use threading
+    server.listen(4) # we need our server to listen for clients
     print(f'Server is running on {port_t[0]} {port_t[1]}')
     # we need a run loop
     while True:
