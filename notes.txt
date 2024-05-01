@@ -69,7 +69,7 @@ Wednesday
 > comprehensions, generators and yield
 > decorator syntax
 > context manager to switch context e.g. for handling data input and output
-- networking server/client (microservices)
+> networking server/client (microservices)
 - overview of Flask
 > immediate mode Python
   > any results are immediately show using __repr__ 
