@@ -1,0 +1,34 @@
+Review 3
+========
+if you wish, use microservices, DB, API, i/o context etc. within your own work
+
+Client Server (Microservices):
+------------------------------
+Write a new server (a microservice) as a front-end to your database from yesterday.
+The client should send requests for specific creatures and the server responds by 
+querying the database and returning a nicely formatted response about that creatures
+Then find a way for the client to add or update members of the database
+The client should persist server responses as bytefiles
+Data should be nicely formatted using the database values
+(the expectation is to write socket microservice, but you could add this to Flask)
+
+Alternative (instead of the above)
+-----------
+In a server, check if the buffer is one of 'users', 'posts', 'todos', 'photos' or 'albums'
+If so, fetch the relevant data set from jsonplaceholder and return it to the client
+(either import your existing 'requests' code or write a module for this)
+Find a way for the client to specify a category AND an id
+(If a valid category is not passed, just echo back as before)
+Adapt the client so it checks to see if a valid category and id have been injected as system argument variables
+If not, ask for a category and an id number from the clients user, then pass these to the server
+The server then requests 'https://jsonplaceholder.typicode.com/<category>/<id>'
+and sends the response back to the client
+e.g. requests.get( f'{apiURL}/{cat}/{id}' )
+Make the server write a nicely formatted byte log file of every request it receives
+
+Further Options
+===============
+Provide a means of context-switching the output from the server. 
+For example the default could be printing to the console,
+but context options could write to a text file or a byte file
+Send context options in the client request to control how the server streams its output
