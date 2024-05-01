@@ -9,6 +9,11 @@ def client():
     #send a message to our server
     message = 'hello' # or b'hello'
     sock.send(message.encode()) # make sure we encode as bytes
+    # if any response is returned, receive it here
+    data = sock.recv(1024) # read up to 1024 bytes
+    print(f'Client received {data}')
+    sock.close()
+
 
 if __name__ == '__main__':
     client()
