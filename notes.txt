@@ -82,16 +82,17 @@ Wednesday
 
 Thursday
 - profiling: timings etc. (cprofile)
-- multithreading, also limits of mutlithreading concurrency
-  - how threads are done
+> multithreading, also limits of mutlithreading concurrency
+  > how threads are done
   - concurrency and resources (lock shared resources)
-  - async await
+  - async await - this is becoming standard
   - thread safety
   in Python we do not get true parallelism ...
-- which Python...
+- which Python... NB 3.13 contains an optional GIL (cpython)
 - the global Interpreter Lock (GIL) will affect threading performance
   the classic cpython will be stymied by the GIL
-  jython (Java) an ironpython (.NET) are NOT limited in this way
+  jython (implements python 2) (Java) an ironpython (.NET) are NOT limited in this way
+  ipython is interactive python (often seen in Jupyter etc.)
 - using thread locks
 - Python has -O to optimize code (especially useful for threading and large code-base)
   -O will attempt to optimize the code especially good for threading
@@ -99,6 +100,25 @@ Thursday
 - after lunch review
 - zip, deque, iter etc
 
+
+[09:37] Helge Wehder (Unverified) (External)
+FYI: GIL going optional gh-116167: Allow disabling the GIL with `PYTHON_GIL=0` or `-X gil=0` by swtaarrs · Pull Request #116338 · python/cpython · GitHub
+gh-116167: Allow disabling the GIL with `PYTHON_GIL=0` or `-X gil=0` by swtaarrs · Pull Request #116338 · python/cpython
+In free-threaded builds, running with PYTHON_GIL=0 or -X gil=0 will now disable the GIL. #116322 and #116329 track follow-up work to re-enable the GIL when loading an incompatible extension, and to...
+[09:47] 
+Gavin Foran (Unverified) (External) has temporarily joined the chat.
+
+[11:03] Helge Wehder (Unverified) (External)
+Sorry Toby Dussek (Guest), you can't access the documentation but the code for CWE-833 is online:
+secure_coding_one_stop_shop_for_python/CWE-664/CWE-833 at main · Ericsson/secure_coding_one_stop_shop_for_python · GitHub
+ 
+On threads we have a good introduction on this topic in the "Python secure coding one stop shop" including  deadlock examples. Main page:
+Introduction to Multithreading and Multiprocessing in Python - Development Environment - eTeamSpace (ericsson.com)
+ 
+Deadlock specific subpage :
+CWE-833: Deadlock - Development Environment - eTeamSpace (ericsson.com) 
+secure_coding_one_stop_shop_for_python/CWE-664/CWE-833 at main · Ericsson/secure_coding_one_stop_shop_for_python
+Secure Coding in Python. Contribute to Ericsson/secure_coding_one_stop_shop_for_python development by creating an account on GitHub.
 
 
 
