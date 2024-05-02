@@ -18,22 +18,16 @@ class MyClassB(): # we do not have to inherit from Thread
 
 def main():
     '''we can invoke our class as a thread'''
-    print('on the main thread')
     cA = MyClassB() # we have access to a new class instance
-    cB = MyClassB() 
-    cC = MyClassB()
-
-    tA = Thread(target=cA,args=('A',))
-    tB = Thread(target=cB,args=('B',))
-    tC = Thread(target=cC,args=('C',))
-
-    tA.start()
-    tB.start()
-    tC.start()
-
-    tA.join() # this causes the main thread to wait
-    tB.join()
-    tC.join()
+    print('on the main thread')
+    thread_l = []
+    for _ in range(0,8):
+        thread_l.append(Thread(target=cA, args=(_,)))
+    print(f'Main thread has spawned several child threads')
+    for item in thread_l:
+        item.start()
+    for item in thread_l:
+        item.join()
 
     print('still on the main thread')
 
