@@ -84,9 +84,9 @@ Thursday
 - profiling: timings etc. (cprofile)
 > multithreading, also limits of mutlithreading concurrency
   > how threads are done
-  - concurrency and resources (lock shared resources)
+  > concurrency and resources (lock shared resources)
   - async await - this is becoming standard
-  - thread safety
+  > thread safety
   in Python we do not get true parallelism ...
 - which Python... NB 3.13 contains an optional GIL (cpython)
 - the global Interpreter Lock (GIL) will affect threading performance

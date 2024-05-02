@@ -3,7 +3,7 @@ import time
 import random
 import timeit
 
-ticketsAvailable = 100000
+ticketsAvailable = 100
 
 class TicketSeller(threading.Thread):
     '''this class will sell tickets'''
@@ -35,7 +35,7 @@ def main():
     lock = threading.Lock()
     sellers_l = []
     start = timeit.default_timer()
-    for _ in range(0, 50):
+    for _ in range(0, 8):
         seller = TicketSeller(lock, _)
         sellers_l.append(seller)
         seller.start()
