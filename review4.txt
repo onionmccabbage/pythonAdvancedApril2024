@@ -46,3 +46,4 @@ Super Optional
 --------------
 Add 'weather' functionality to your microservice or Flask app from before
 This lets you grab many weather reports in one go (on separate threads)
+Maybe try profiling your app
