@@ -2,6 +2,11 @@ from threading import Thread
 import time
 import random
 
+# we can run a profile against ANY python module
+# python -m cProfile -o prof_out 02_thread_class.py
+# this will generate a profile report called prof_out
+
+
 class MyClass(Thread):
     '''Any class may be invoked as a thread, but it is easiest if the class inherists from Thread'''
     def __init__(self, n, x):

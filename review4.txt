@@ -1,0 +1,48 @@
+Advanced Python Review 4 (1 hr)
+- Alter these instructions to suit your thinking
+- Aim for good architecture (maybe use separate modules, remember 'if __name__...')
+- Look online, talk to each other, ask me etc.
+- There will be an opportunity to share your code
+
+Write a 'Weather' class with get/set methods for 'city' and 'description'
+Make the 'city' default to 'Athlone'
+In a separate thread, use the 'requests' library to get data from
+  https://api.openweathermap.org/data/2.5/weather?q=athlone&units=metric&APPID=48f2d5e18b0d2bc50519b58cce6409f1
+  (this ID will work up to 60 requests a minute)
+When the response comes back, populate an instance of your Weather class
+For this API JSON data, the description will be
+  response_dict['weather'][0]['description']
+
+In your Weather class, override __str__ so the class prints nicely, something like
+  'The weather in Athlone is cloudy'
+
+Your class should validate:
+  - the value for 'city' is a non-empty string of three or more characters
+  - if city is missing or unacceptable, you should provide a sensible default (e.g. 'Athlone')
+
+Write try-except blocks around some of your code (e.g. the api access)
+
+Optional
+--------
+Pass in the 'city' value as a parameter for the API URL
+  f'https://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&APPID=48f2d5e18b0d2bc50519b58cce6409f1'
+The 'city' could be a sys.argv or user input value, but always provide a default
+
+Add a property to your Weather class for 'temperature' (a floating point number)
+Use the returned data to populate values for temperature in your Weather instance
+The temperature value will be
+  response_dict['main']['temp'] (show other data if you wish)
+
+If time
+-------
+Ask the user or read values in from a data file or sys.argv
+(use sensible defaults for speedy development)
+In all cases, check they are valid then make a get request and show the returned json
+Append a few data properties to a text file (or byte file)
+Try to make the request happen on it's own thread
+(You could also encapsulate errors in a class too)
+
+Super Optional
+--------------
+Add 'weather' functionality to your microservice or Flask app from before
+This lets you grab many weather reports in one go (on separate threads)
