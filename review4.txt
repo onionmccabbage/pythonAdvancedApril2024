@@ -1,4 +1,4 @@
-Advanced Python Review 4 (1 hr)
+Advanced Python Review 4 (1 hr until  2:50)
 - Alter these instructions to suit your thinking
 - Aim for good architecture (maybe use separate modules, remember 'if __name__...')
 - Look online, talk to each other, ask me etc.
