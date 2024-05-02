@@ -93,13 +93,14 @@ Thursday
   the classic cpython will be stymied by the GIL
   jython (implements python 2) (Java) an ironpython (.NET) are NOT limited in this way
   ipython is interactive python (often seen in Jupyter etc.)
+  see https://peps.python.org/pep-0703/
 > using thread locks
 > Python has -O to optimize code (especially useful for threading and large code-base)
   -O will attempt to optimize the code especially good for threading
 > logging, context mgr, often we log by time-stamp
 > after lunch review
 > async server and client for microservices
-- zip, deque, iter etc
+> zip, deque, iter etc
 
 From the chat:
 GIL going optional gh-116167: Allow disabling the GIL with `PYTHON_GIL=0` or `-X gil=0` by swtaarrs · Pull Request #116338 · python/cpython · GitHub
@@ -116,7 +117,7 @@ Secure Coding in Python. Contribute to Ericsson/secure_coding_one_stop_shop_for_
 
 
 
-- end of course feedbacks (internal and Neueda)
+- end of course feedbacks (internal)
   https://apps.powerapps.com/play/17579985-153c-4727-b1f4-8b53e48b5e72?tenantId=92e84ceb-fbfd-47ab-be52-080c6b87953f&Type=ILT&ID=LZU1500681&OID=513177&Title=Advanced%20Python&Owner=Sachin%20Srivastava%20B
 
 Other Useful Resources
