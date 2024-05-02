@@ -73,12 +73,12 @@ Wednesday
 > overview of Flask
 > immediate mode Python
   > any results are immediately show using __repr__ 
-- Testing: (only really works if there is a good spec')
-  - doctest revisited
+> Testing: (only really works if there is a good spec')
+  > doctest revisited
   see https://docs.python.org/3/library/doctest.html
-  - unittest
+  > unittest
 > after lunch lab exercise
-- pytest see https://docs.pytest.org/
+> pytest see https://docs.pytest.org/
 
 Thursday
 - profiling: timings etc. (cprofile)
@@ -98,7 +98,12 @@ Thursday
 - logging, context mgr, often we log by time-stamp
 - after lunch review
 - zip, deque, iter etc
+
+
+
+
 - end of course feedbacks (internal and Neueda)
+  https://apps.powerapps.com/play/17579985-153c-4727-b1f4-8b53e48b5e72?tenantId=92e84ceb-fbfd-47ab-be52-080c6b87953f&Type=ILT&ID=LZU1500681&OID=513177&Title=Advanced%20Python&Owner=Sachin%20Srivastava%20B
 
 Other Useful Resources
 - https://pynative.com/python-exercises-with-solutions/
