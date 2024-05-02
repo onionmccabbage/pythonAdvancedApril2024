@@ -5,6 +5,7 @@ import random
 class MyClass(Thread):
     '''Any class may be invoked as a thread, but it is easiest if the class inherists from Thread'''
     def __init__(self, n, x):
+        # super().__init__(group, target, name, args, kwargs, daemon=daemon) # we tend to avoid this!
         Thread.__init__(self) # we call the __init__ of the parent class
         self.n = n # we could use property get/set methods
         self.x = x

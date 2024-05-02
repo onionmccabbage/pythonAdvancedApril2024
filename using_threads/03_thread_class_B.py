@@ -14,7 +14,7 @@ class MyClassB(): # we do not have to inherit from Thread
         for i in range(0,10): # on average this should take 0.5 sec
             msg += f'{n} is sleeping\n'
             time.sleep(random.random()*0.1) # sleep for up to 1/10 sec
-        print(msg) # try to minimize I/O
+        print(msg, end='') # try to minimize I/O
 
 def main():
     '''we can invoke our class as a thread'''
@@ -24,8 +24,8 @@ def main():
     cC = MyClassB()
 
     tA = Thread(target=cA,args=('A',))
-    tB = Thread(target=cA,args=('B',))
-    tC = Thread(target=cA,args=('C',))
+    tB = Thread(target=cB,args=('B',))
+    tC = Thread(target=cC,args=('C',))
 
     tA.start()
     tB.start()
