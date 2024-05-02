@@ -85,18 +85,18 @@ Thursday
 > multithreading, also limits of mutlithreading concurrency
   > how threads are done
   > concurrency and resources (lock shared resources)
-  - async await - this is becoming standard
+  > async await - this is becoming standard
   > thread safety
   in Python we do not get true parallelism ...
-- which Python... NB 3.13 contains an optional GIL (cpython)
-- the global Interpreter Lock (GIL) will affect threading performance
+> which Python... NB 3.13 contains an optional GIL (cpython)
+> the global Interpreter Lock (GIL) will affect threading performance
   the classic cpython will be stymied by the GIL
   jython (implements python 2) (Java) an ironpython (.NET) are NOT limited in this way
   ipython is interactive python (often seen in Jupyter etc.)
-- using thread locks
-- Python has -O to optimize code (especially useful for threading and large code-base)
+> using thread locks
+> Python has -O to optimize code (especially useful for threading and large code-base)
   -O will attempt to optimize the code especially good for threading
-- logging, context mgr, often we log by time-stamp
+> logging, context mgr, often we log by time-stamp
 > after lunch review
 - zip, deque, iter etc
 
