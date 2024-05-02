@@ -98,6 +98,7 @@ Thursday
   -O will attempt to optimize the code especially good for threading
 > logging, context mgr, often we log by time-stamp
 > after lunch review
+> async server and client for microservices
 - zip, deque, iter etc
 
 From the chat:
