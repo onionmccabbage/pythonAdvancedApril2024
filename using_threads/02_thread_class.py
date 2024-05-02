@@ -18,10 +18,10 @@ def main():
     '''we can invoke our class as a thread'''
     print('on the main thread')
     tA = MyClass('A', True) # we have access to a new thread
-    tB = MyClass('A', []) 
-    tC = MyClass('A', (3,2,1))
-    tD = MyClass('A', {3,4,5,6,7}) 
-    tE = MyClass('A', tA) 
+    tB = MyClass('B', []) 
+    tC = MyClass('C', (3,2,1))
+    tD = MyClass('D', {3,4,5,6,7}) 
+    tE = MyClass('E', tA) 
 
     tA.start()
     tB.start()
