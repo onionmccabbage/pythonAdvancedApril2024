@@ -3,15 +3,16 @@ import time
 import random
 import timeit
 
-ticketsAvailable = 100
+ticketsAvailable = 100000
 
 class TicketSeller(threading.Thread):
     '''this class will sell tickets'''
     ticketsSold = 0
-    def __init__(self, lock):
+    def __init__(self, lock, n):
         threading.Thread.__init__(self)
         self.__lock = lock
-        print('Ticket seller starts selling tickets')
+        self.__n = n
+        print(f'Ticket seller {self.__n} starts selling tickets')
     def run(self):
         global ticketsAvailable
         running = True
@@ -23,19 +24,19 @@ class TicketSeller(threading.Thread):
             else:
                 ticketsAvailable -= 1
                 self.ticketsSold += 1
-                print(f'Sold a ticket: {ticketsAvailable} remaining')
+                print(f'{self.__n} Sold a ticket: {ticketsAvailable} remaining')
             self.__lock.release()
-        print(f'Sold {self.ticketsSold}')
+        print(f'{self.__n} Sold {self.ticketsSold}')
     def randomDelay(self):
-        time.sleep(random.randint(0,4)/4) # 0, 0.25, 0.75, 1
+        time.sleep(random.randint(0,4)/256) # 0, 0.25, 0.75, 1
 
 def main():
     '''invoke several ticket sellers on threads'''
     lock = threading.Lock()
     sellers_l = []
     start = timeit.default_timer()
-    for _ in range(0, 8):
-        seller = TicketSeller(lock)
+    for _ in range(0, 50):
+        seller = TicketSeller(lock, _)
         sellers_l.append(seller)
         seller.start()
     for seller in sellers_l:
