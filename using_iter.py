@@ -18,6 +18,12 @@ class Evens:
 
 def main():
     '''exercise the code'''
+    e = Evens(10) # an instance of our iterable class
+    print(e.__next__()) # 0
+    print(e.__next__()) # 2
+    print(e.__next__()) # 4
+    for _ in e:
+        print(f'next is {_}')
 
 if __name__ == '__main__':
     main()
