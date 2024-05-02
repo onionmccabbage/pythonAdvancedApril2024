@@ -28,3 +28,20 @@ class TicketSeller(threading.Thread):
         print(f'Sold {self.ticketsSold}')
     def randomDelay(self):
         time.sleep(random.randint(0,4)/4) # 0, 0.25, 0.75, 1
+
+def main():
+    '''invoke several ticket sellers on threads'''
+    lock = threading.Lock()
+    sellers_l = []
+    start = timeit.default_timer()
+    for _ in range(0, 8):
+        seller = TicketSeller(lock)
+        sellers_l.append(seller)
+        seller.start()
+    for seller in sellers_l:
+        seller.join()
+    end = timeit.default_timer()
+    print(f'total time: {end-start}')
+
+if __name__ == '__main__':
+    main()
